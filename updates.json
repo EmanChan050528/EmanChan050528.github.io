@@ -1,0 +1,30 @@
+{
+  "cultivation": [
+    {
+      "version": "0.15.3",
+      "title": "A smaller starting line",
+      "summary": "A new run starts small. The starting attributes were 1,000 Qi Affinity, 1,000 Comprehension, 1,000 Constitution and 400 each of Strength and Endurance, with SPD reading 10,000. They are now 1 Qi Affinity, 1 Comprehension, 100 of each physical attribute, and SPD reads 100%.",
+      "date": "2026-09-15"
+    },
+    {
+      "version": "0.15.2",
+      "title": "The Laws, balanced",
+      "summary": "The new Laws are worth building a character around. Their stat effect was ×2.59 at 100%, a footnote beside Soul Transformation's numbers. It is now ×100: ×1.585 per 10%, so the ~20% a player arrives with is already ×2.5, 50% is ×10, 75% ×32.",
+      "date": "2026-09-13"
+    }
+  ],
+  "jp-subs": [
+    {
+      "version": "1.7.0",
+      "title": "Subtitle files",
+      "summary": "Japanese `.srt`/`.vtt` in, English `.srt` out, in its own tab. This is how the project reaches video that is not on YouTube, and it costs no per-site work: a subtitle file is the same thing the interceptor already extracts — timed cues — so the two-pass pipeline is reused unchanged.",
+      "date": "2026-09-06"
+    },
+    {
+      "version": "1.6.0",
+      "title": "Quality of life",
+      "summary": "Hide/show subtitles without discarding the translation. Glossary corrections applied to cached subtitles instantly, with no re-translation. Popup state read from durable storage instead of the worker's in-memory map, which MV3 wipes after ~30 s idle — that was why reopening the popup lost the button state.",
+      "date": "2026-09-04"
+    }
+  ]
+}

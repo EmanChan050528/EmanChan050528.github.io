@@ -1,0 +1,44 @@
+name: Update project updates
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC
+  workflow_dispatch:        # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: update-updates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate the updates list
+        env:
+          # Needed only for the private repo (cultivation-idle): a fine-grained token with read-only Contents access.
+          # Without it, public repos still update and private ones keep their current entries.
+          PROJECTS_READ_TOKEN: ${{ secrets.PROJECTS_READ_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_updates.py
+
+      - name: Commit and publish if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- index.html updates.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html updates.json
+          git commit -m "Update project updates from changelogs"
+          git push
+          # Pushes made with GITHUB_TOKEN may not trigger a Pages build on their own.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true

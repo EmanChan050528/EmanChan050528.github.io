@@ -194,6 +194,7 @@ section { padding: 40px 0; }
 .update:first-child { border-top: 0; }
 .update .what { font: 500 13px var(--mono); }
 .update .what .proj { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+.update .what .date { display: block; color: var(--muted); font-size: 12px; }
 .update .what .ver { color: var(--c, var(--brand)); }
 .update h4 { margin: 0 0 4px; font: 600 16px var(--sans); }
 .update p { margin: 0; color: var(--muted); font-size: 15px; }
@@ -271,7 +272,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <span class="tag status">In development</span>
             <span class="tag">Godot 4.6</span>
             <span class="tag">GDScript</span>
-            <span class="tag">v0.15.3</span>
+            <span class="tag"><!--ver:cultivation-->v0.15.3<!--/ver--></span>
           </div>
           <h3>Cultivation Idle</h3>
           <p class="sub">An idle game about becoming immortal.</p>
@@ -308,7 +309,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <span class="tag status">Released</span>
             <span class="tag">Chrome extension</span>
             <span class="tag">JavaScript</span>
-            <span class="tag">v1.7.0</span>
+            <span class="tag"><!--ver:jp-subs-->v1.7.0<!--/ver--></span>
           </div>
           <h3>JP Subs</h3>
           <p class="sub">English subtitles for Japanese YouTube, translated locally.</p>
@@ -344,34 +345,36 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
         <span>from the changelogs</span>
       </div>
       <div class="updates">
+        <!--updates:start-->
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--gold)">v0.15.3</span><span class="proj">Cultivation Idle</span></div>
+          <div class="what"><span class="ver" style="--c:var(--gold)">v0.15.3</span><span class="proj">Cultivation Idle</span><span class="date">Sep 15, 2026</span></div>
           <div>
             <h4>A smaller starting line</h4>
-            <p>A new run now starts small: 1 Qi Affinity, 1 Comprehension and 100 of each physical attribute. The late game keeps its size, and all 36 enemies and four tribulations were re-derived to match.</p>
+            <p>A new run starts small. The starting attributes were 1,000 Qi Affinity, 1,000 Comprehension, 1,000 Constitution and 400 each of Strength and Endurance, with SPD reading 10,000. They are now 1 Qi Affinity, 1 Comprehension, 100 of each physical attribute, and SPD reads 100%.</p>
           </div>
         </div>
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--gold)">v0.15.2</span><span class="proj">Cultivation Idle</span></div>
+          <div class="what"><span class="ver" style="--c:var(--gold)">v0.15.2</span><span class="proj">Cultivation Idle</span><span class="date">Sep 13, 2026</span></div>
           <div>
             <h4>The Laws, balanced</h4>
-            <p>The new Laws are now worth building a character around. Their effect at 100% went from a footnote (×2.59) to ×100.</p>
+            <p>The new Laws are worth building a character around. Their stat effect was ×2.59 at 100%, a footnote beside Soul Transformation's numbers. It is now ×100: ×1.585 per 10%, so the ~20% a player arrives with is already ×2.5, 50% is ×10, 75% ×32.</p>
           </div>
         </div>
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--sky)">v1.7.0</span><span class="proj">JP Subs</span></div>
+          <div class="what"><span class="ver" style="--c:var(--sky)">v1.7.0</span><span class="proj">JP Subs</span><span class="date">Sep 6, 2026</span></div>
           <div>
             <h4>Subtitle files</h4>
-            <p>Japanese <code>.srt</code>/<code>.vtt</code> in, English <code>.srt</code> out. This is how JP Subs reaches video that isn't on YouTube, using the same two-pass pipeline.</p>
+            <p>Japanese <code>.srt</code>/<code>.vtt</code> in, English <code>.srt</code> out, in its own tab. This is how the project reaches video that is not on YouTube, and it costs no per-site work: a subtitle file is the same thing the interceptor already extracts — timed cues — so the two-pass pipeline is reused unchanged.</p>
           </div>
         </div>
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--sky)">v1.6.0</span><span class="proj">JP Subs</span></div>
+          <div class="what"><span class="ver" style="--c:var(--sky)">v1.6.0</span><span class="proj">JP Subs</span><span class="date">Sep 4, 2026</span></div>
           <div>
             <h4>Quality of life</h4>
-            <p>Hide and show subtitles without losing the translation, and glossary corrections apply to cached subtitles instantly with no re-translation.</p>
+            <p>Hide/show subtitles without discarding the translation. Glossary corrections applied to cached subtitles instantly, with no re-translation. Popup state read from durable storage instead of the worker's in-memory map, which MV3 wipes after ~30 s idle — that was why reopening the popup lost the button state.</p>
           </div>
         </div>
+        <!--updates:end-->
       </div>
     </section>
 
