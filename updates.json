@@ -26,5 +26,19 @@
       "summary": "Hide/show subtitles without discarding the translation. Glossary corrections applied to cached subtitles instantly, with no re-translation. Popup state read from durable storage instead of the worker's in-memory map, which MV3 wipes after ~30 s idle — that was why reopening the popup lost the button state.",
       "date": "2026-09-04"
     }
+  ],
+  "whisper-subs": [
+    {
+      "version": "0.1.0",
+      "title": "Desktop app",
+      "summary": "A drag-and-drop window for anyone who would rather not use a terminal, and a standalone Windows build that needs no Python installed.",
+      "date": "2026-09-26"
+    },
+    {
+      "version": "0.0.3",
+      "title": "Quality and long files",
+      "summary": "Long recordings are safe to interrupt, and the subtitles are cleaner: missed speech is recovered, invented sign-offs are dropped, and timing is tidier.",
+      "date": "2026-09-26"
+    }
   ]
 }

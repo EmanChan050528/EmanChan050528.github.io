@@ -27,6 +27,7 @@ MAX_SUMMARY = 340
 PROJECTS = [
     {"key": "cultivation", "repo": "EmanChan050528/cultivation-idle", "name": "Cultivation Idle", "color": "gold"},
     {"key": "jp-subs", "repo": "EmanChan050528/jp-subs", "name": "JP Subs", "color": "sky"},
+    {"key": "whisper-subs", "repo": "EmanChan050528/whisper-subs", "name": "Whisper Subtitler", "color": "brand"},
 ]
 
 HEADING = re.compile(r"^##\s+v?(\d+\.\d+\.\d+)\s*[—–-]\s*(.+?)\s*$")
