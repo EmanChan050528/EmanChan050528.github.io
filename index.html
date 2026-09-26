@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meatylok's Homepage</title>
-<meta name="description" content="Project updates from Meatylok: Cultivation Idle, an idle game about Xianxia cultivation, and JP Subs, local Japanese-to-English subtitles for YouTube.">
+<meta name="description" content="Project updates from Meatylok: Cultivation Idle, an idle game about Xianxia cultivation, and JP Subs and Whisper Subtitler, local Japanese-to-English subtitle tools.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1413'/%3E%3Cpath d='M7 23V9l9 9 9-9v14' fill='none' stroke='%235fd0a3' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,7 +263,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
     <div class="hero">
       <p class="eyebrow">Meatylok's homepage</p>
       <h1>Games and tools, built <em>in the open</em>.</h1>
-      <p class="lede">Bookmark this to keep an eye on my project updates. Right now that's an idle game about climbing the realms of Xianxia cultivation, and a browser extension that subtitles Japanese YouTube on your own machine.</p>
+      <p class="lede">Bookmark this to keep an eye on my project updates. Right now that's an idle game about climbing the realms of Xianxia cultivation, plus two tools that subtitle Japanese video on your own machine: a browser extension for YouTube and a desktop app for any file.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">See the projects</a>
         <a class="btn" href="https://github.com/EmanChan050528" rel="noopener">GitHub profile</a>
@@ -273,7 +273,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
     <section id="projects" aria-labelledby="projects-h">
       <div class="section-head">
         <h2 id="projects-h">Current projects</h2>
-        <span>2 active</span>
+        <span>3 active</span>
       </div>
 
       <!-- Cultivation Idle -->
@@ -346,6 +346,40 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <p class="jp" id="jpline"><span>JA</span><span lang="ja">みなさん、こんにちは。配信へようこそ。</span></p>
             <p class="caption">Illustrative mock-up of the overlay and progress box. Also exports <code>.srt</code> and translates <code>.srt</code>/<code>.vtt</code> files.</p>
           </div>
+        </div>
+      </article>
+
+      <!-- Whisper Subtitler -->
+      <article class="project">
+        <div class="body">
+          <div class="tags">
+            <span class="tag status">Early release</span>
+            <span class="tag">Desktop app + CLI</span>
+            <span class="tag">Python</span>
+            <span class="tag">v0.1.0</span>
+          </div>
+          <h3>Whisper Subtitler</h3>
+          <p class="sub">English subtitles for any Japanese video or audio file, made locally.</p>
+          <p>Drop a file in and get <code>.srt</code> subtitles beside it. It covers what JP Subs can't: <strong>local recordings</strong>, Niconico and Bilibili downloads and stream archives that have no caption track. Nothing is uploaded and there is no API key.</p>
+          <p><strong>faster-whisper</strong> (large-v3) transcribes the speech, then the two-pass <strong>Ollama</strong> pipeline ported from JP Subs translates it, with a per-series glossary to keep names consistent. Progress is saved as it goes, so a long archive can be paused and resumed.</p>
+          <div class="facts">
+            <div><b>~10 min</b><small>per hour of speech</small></div>
+            <div><b>$0</b><small>per file, no API key</small></div>
+            <div><b>3</b><small>outputs: EN, JA, bilingual</small></div>
+          </div>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/EmanChan050528/whisper-subs" rel="noopener">View on GitHub</a>
+            <a class="link" href="https://github.com/EmanChan050528/whisper-subs#install" rel="noopener">Install guide &rarr;</a>
+          </div>
+        </div>
+        <div class="visual shots">
+          <figure>
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="images/whisper-subs-window.png">
+              <img src="images/whisper-subs-demo.gif" width="640" height="589" loading="lazy" alt="The Whisper Subtitler window: a file is dropped in, transcribed and translated, and the Japanese and English lines are listed as they are written.">
+            </picture>
+            <figcaption>Drop in a file, press Start. Timings measured on an RTX 5070.</figcaption>
+          </figure>
         </div>
       </article>
     </section>
