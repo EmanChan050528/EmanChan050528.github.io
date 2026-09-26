@@ -21,6 +21,7 @@
   --brand: #5fd0a3;
   --gold: #e0bd72;
   --sky: #86b9ec;
+  --violet: #b9a3f2;
   --on-brand: #06231a;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -37,6 +38,7 @@
     --brand: #0d7a57;
     --gold: #8a6212;
     --sky: #1f5f9e;
+    --violet: #6a42b5;
     --on-brand: #ffffff;
   }
 }
@@ -50,6 +52,7 @@
   --brand: #0d7a57;
   --gold: #8a6212;
   --sky: #1f5f9e;
+  --violet: #6a42b5;
   --on-brand: #ffffff;
 }
 
@@ -122,6 +125,7 @@ section { padding: 40px 0; }
 }
 .project.gold { --accent: var(--gold); }
 .project.sky { --accent: var(--sky); }
+.project.violet { --accent: var(--violet); }
 .project .body { padding: 34px 34px 30px; display: flex; flex-direction: column; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .tag {
@@ -187,6 +191,13 @@ section { padding: 40px 0; }
 .player .jp { font: 400 13px var(--sans); color: var(--muted); margin: 12px 2px 0; display: flex; gap: 8px; }
 .player .jp span:first-child { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding-top: 2px; }
 .player .caption { font-size: 12px; color: var(--muted); margin: 10px 2px 0; }
+
+/* screenshots (solar system) */
+.visual.shots { flex-direction: column; gap: 14px; }
+.shots figure { margin: 0; width: 100%; max-width: 420px; }
+.shots a { display: block; }
+.shots img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); background: #000; }
+.shots figcaption { font-size: 12.5px; color: var(--muted); margin: 6px 2px 0; }
 
 /* updates */
 .updates { border: 1px solid var(--border); border-radius: 16px; background: var(--surface); overflow: hidden; }
@@ -376,6 +387,47 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
         </div>
         <!--updates:end-->
       </div>
+    </section>
+
+    <section id="earlier" aria-labelledby="earlier-h">
+      <div class="section-head">
+        <h2 id="earlier-h">Earlier work</h2>
+        <span>coursework</span>
+      </div>
+
+      <!-- Solar System -->
+      <article class="project violet">
+        <div class="body">
+          <div class="tags">
+            <span class="tag status">Completed</span>
+            <span class="tag">C++</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">University coursework</span>
+          </div>
+          <h3>Solar System</h3>
+          <p class="sub">A real-time solar system in C++ and modern OpenGL.</p>
+          <p>Built from scratch for a university graphics module. The planets, moon and comet are <strong>procedurally generated</strong>, the comet follows a <strong>B&eacute;zier curve</strong>, and every lit body gets a <strong>shadow map</strong> rendered from the sun's direction.</p>
+          <p>The scene renders in <strong>HDR with bloom</strong>, with a cubemap skybox, a glowing sun and particle effects for the comet trail and the UFO's exhaust. Switch between a planet, moon, comet or a flyable UFO camera.</p>
+          <div class="facts">
+            <div><b>6 + 1</b><small>planets, plus the Moon</small></div>
+            <div><b>4096&sup2;</b><small>shadow map resolution</small></div>
+            <div><b>4</b><small>camera modes</small></div>
+          </div>
+          <div class="links">
+            <span class="note">Private repository (coursework), so there is no public source link.</span>
+          </div>
+        </div>
+        <div class="visual shots">
+          <figure>
+            <a href="images/solar-system-overview.png"><img src="images/solar-system-overview-880.webp" width="880" height="472" loading="lazy" alt="The sun with a glowing halo, surrounded by textured planets and the Moon against a starfield skybox."></a>
+            <figcaption>The sun with its glow, planets and skybox.</figcaption>
+          </figure>
+          <figure>
+            <a href="images/solar-system-earth.png"><img src="images/solar-system-earth-880.webp" width="880" height="466" loading="lazy" alt="A close view of a textured Earth with two smaller bodies nearby and the sun with its glow in the distance."></a>
+            <figcaption>Up close: a textured Earth with the sun in the distance.</figcaption>
+          </figure>
+        </div>
+      </article>
     </section>
 
   </div>
