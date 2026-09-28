@@ -40,5 +40,19 @@
       "summary": "A drag-and-drop window for anyone who would rather not use a terminal, and a standalone Windows build that needs no Python installed.",
       "date": "2026-09-26"
     }
+  ],
+  "webnovel": [
+    {
+      "version": "1.0.0",
+      "title": "First release",
+      "summary": "The same extension as 0.5.0, released. What it does:",
+      "date": "2026-09-28"
+    },
+    {
+      "version": "0.5.0",
+      "title": "Second site, fallbacks",
+      "summary": "Jinjiang (jjwxc.net free chapters). Its paragraphs are loose text between `<br>`s, not elements, which exposed Qidian assumptions in the content script. The adapter contract now hands over text nodes and a content root (§5.2).",
+      "date": "2026-09-28"
+    }
   ]
 }

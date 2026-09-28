@@ -403,21 +403,23 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       <article class="project vermilion">
         <div class="body">
           <div class="tags">
-            <span class="tag status">In development</span>
+            <span class="tag status">Released</span>
             <span class="tag">Chrome extension + CLI</span>
             <span class="tag">JavaScript</span>
+            <span class="tag"><!--ver:webnovel-->v1.0.0<!--/ver--></span>
           </div>
           <h3>Webnovel Translator</h3>
           <p class="sub">Chinese web novels, translated in place &mdash; locally.</p>
-          <p>Same posture as JP Subs, aimed at prose instead of subtitles: a local model through <strong>Ollama</strong> translates a chapter where you're already reading it. Nothing is uploaded, and nothing costs per chapter.</p>
-          <p>Site adapters extract a chapter's text on <strong>Qidian</strong> and <strong>Jinjiang's</strong> free chapters; anywhere else, a paste-and-translate tab covers it, and a page scrambled by an anti-copy font is refused rather than mistranslated. A per-novel <strong>glossary</strong> (names, factions, realms, techniques, terms) keeps invented terminology consistent chapter to chapter, and finished chapters are cached locally, so a reread is instant.</p>
+          <p>Same posture as JP Subs, aimed at prose instead of subtitles: a local model through <strong>Ollama</strong> translates a chapter's paragraphs in place, in the page, as each finishes. Nothing is uploaded, and nothing costs per chapter.</p>
+          <p>Site adapters cover <strong>Qidian</strong> and <strong>Jinjiang's</strong> free chapters; a paste-and-translate tab covers anywhere else, and a page scrambled by an anti-copy font is refused rather than mistranslated. A per-novel <strong>glossary</strong> (names, factions, realms, techniques, terms) builds itself as you read and keeps invented terminology consistent chapter to chapter, and finished chapters are cached locally, so a reread is instant.</p>
           <div class="facts">
             <div><b>2</b><small>site adapters, plus paste-in fallback</small></div>
             <div><b>370&ndash;400</b><small>chapters cached locally</small></div>
             <div><b>5</b><small>glossary categories</small></div>
           </div>
           <div class="links">
-            <span class="note">Private repository, early: the translation core is proven from the command line, but the extension hasn't been loaded into a real browser yet.</span>
+            <a class="btn primary" href="https://github.com/EmanChan050528/webnovel-translator" rel="noopener">View on GitHub</a>
+            <a class="link" href="https://github.com/EmanChan050528/webnovel-translator#setup" rel="noopener">Setup guide &rarr;</a>
           </div>
         </div>
         <div class="visual">
@@ -453,6 +455,20 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
           <div>
             <h4>A new window, line-shift check and streaming audio</h4>
             <p>The window has been rebuilt as a modern app, with file cards that show each stage's progress, switches instead of checkboxes, and a drop target that covers the whole window.</p>
+          </div>
+        </div>
+        <div class="update">
+          <div class="what"><span class="ver" style="--c:var(--vermilion)">v1.0.0</span><span class="proj">Webnovel Translator</span><span class="date">Sep 28, 2026</span></div>
+          <div>
+            <h4>First release</h4>
+            <p>The same extension as 0.5.0, released. What it does:</p>
+          </div>
+        </div>
+        <div class="update">
+          <div class="what"><span class="ver" style="--c:var(--vermilion)">v0.5.0</span><span class="proj">Webnovel Translator</span><span class="date">Sep 28, 2026</span></div>
+          <div>
+            <h4>Second site, fallbacks</h4>
+            <p>Jinjiang (jjwxc.net free chapters). Its paragraphs are loose text between <code>&lt;br&gt;</code>s, not elements, which exposed Qidian assumptions in the content script. The adapter contract now hands over text nodes and a content root (§5.2).</p>
           </div>
         </div>
         <div class="update">
