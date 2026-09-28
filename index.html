@@ -22,6 +22,7 @@
   --gold: #e0bd72;
   --sky: #86b9ec;
   --violet: #b9a3f2;
+  --crimson: #e8a0ab;
   --on-brand: #06231a;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -39,6 +40,7 @@
     --gold: #8a6212;
     --sky: #1f5f9e;
     --violet: #6a42b5;
+    --crimson: #a23347;
     --on-brand: #ffffff;
   }
 }
@@ -53,6 +55,7 @@
   --gold: #8a6212;
   --sky: #1f5f9e;
   --violet: #6a42b5;
+  --crimson: #a23347;
   --on-brand: #ffffff;
 }
 
@@ -126,6 +129,7 @@ section { padding: 40px 0; }
 .project.gold { --accent: var(--gold); }
 .project.sky { --accent: var(--sky); }
 .project.violet { --accent: var(--violet); }
+.project.crimson { --accent: var(--crimson); }
 .project .body { padding: 34px 34px 30px; display: flex; flex-direction: column; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .tag {
@@ -198,6 +202,14 @@ section { padding: 40px 0; }
 .shots a { display: block; }
 .shots img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); background: #000; }
 .shots figcaption { font-size: 12.5px; color: var(--muted); margin: 6px 2px 0; }
+
+/* terminal (xts-zodiac) */
+.terminal { width: 100%; max-width: 400px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: #0b0f0e; box-shadow: 0 18px 40px -20px rgba(0,0,0,.5); }
+.term-bar { display: flex; gap: 6px; padding: 10px 12px; background: #151a18; }
+.term-bar span { width: 10px; height: 10px; border-radius: 50%; background: #3a423f; }
+.term-body { margin: 0; padding: 16px; font: 400 12.5px/1.65 var(--mono); color: #c9d1cd; white-space: pre-wrap; }
+.term-body .ok { color: #5fd0a3; font-weight: 600; }
+.term-caption { font-size: 12.5px; color: var(--muted); margin: 10px 2px 0; max-width: 400px; }
 
 /* updates */
 .updates { border: 1px solid var(--border); border-radius: 16px; background: var(--surface); overflow: hidden; }
@@ -474,6 +486,45 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <a href="images/solar-system-earth.png"><img src="images/solar-system-earth-880.webp" width="880" height="466" loading="lazy" alt="A close view of a textured Earth with two smaller bodies nearby and the sun with its glow in the distance."></a>
             <figcaption>Up close: a textured Earth with the sun in the distance.</figcaption>
           </figure>
+        </div>
+      </article>
+
+      <!-- XTS-Zodiac -->
+      <article class="project crimson">
+        <div class="body">
+          <div class="tags">
+            <span class="tag status">Completed</span>
+            <span class="tag">Java</span>
+            <span class="tag">Cryptography</span>
+            <span class="tag">University coursework</span>
+          </div>
+          <h3>XTS-Zodiac</h3>
+          <p class="sub">A block cipher and a disk-encryption mode, implemented from spec.</p>
+          <p>The coursework provided a skeleton project (interfaces, a reference AES implementation, a Galois-field multiplier, and a known-answer test suite) and asked for two pieces to be implemented against it. <strong>The Zodiac cipher</strong> is a 128-bit block cipher built from a written specification rather than a reference implementation: a round function, two internal permutations, and an 18-round key schedule.</p>
+          <p><strong>XTS mode</strong> is the tweakable disk-encryption mode behind BitLocker and dm-crypt, which encrypts a volume in independently-tweaked sectors so identical plaintext sectors don't produce identical ciphertext. It's implemented to work over either block cipher in the project &mdash; the provided AES128, or the Zodiac cipher above &mdash; including ciphertext stealing for a final sector that isn't a whole number of blocks.</p>
+          <div class="facts">
+            <div><b>94</b><small>tests passing</small></div>
+            <div><b>18</b><small>round key schedule</small></div>
+            <div><b>2</b><small>ciphers under one XTS mode</small></div>
+          </div>
+          <div class="links">
+            <span class="note">Private repository (coursework), so there is no public source link.</span>
+          </div>
+        </div>
+        <div class="visual">
+          <div>
+            <div class="terminal" aria-hidden="true">
+              <div class="term-bar"><span></span><span></span><span></span></div>
+              <pre class="term-body">$ ./gradlew test
+
+&gt; Task :test
+<span class="ok">BUILD SUCCESSFUL</span> in 10s
+5 actionable tasks: 5 executed
+
+<span class="ok">94 tests, 0 failed</span></pre>
+            </div>
+            <p class="term-caption">The full known-answer test suite, run locally.</p>
+          </div>
         </div>
       </article>
     </section>
