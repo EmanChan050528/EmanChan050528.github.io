@@ -320,7 +320,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <span class="tag status">Released</span>
             <span class="tag">Chrome extension</span>
             <span class="tag">JavaScript</span>
-            <span class="tag"><!--ver:jp-subs-->v1.7.0<!--/ver--></span>
+            <span class="tag"><!--ver:jp-subs-->v1.11.0<!--/ver--></span>
           </div>
           <h3>JP Subs</h3>
           <p class="sub">English subtitles for Japanese YouTube, translated locally.</p>
@@ -392,6 +392,20 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       <div class="updates">
         <!--updates:start-->
         <div class="update">
+          <div class="what"><span class="ver" style="--c:var(--sky)">v1.11.0</span><span class="proj">JP Subs</span><span class="date">Sep 27, 2026</span></div>
+          <div>
+            <h4>Ollama health check</h4>
+            <p>Ollama is a separate program people close, and the old failure mode was to start a run, extract the whole transcript, and only then hit the model call and die. The popup now probes before anything starts and disables Translate until the backend is actually usable.</p>
+          </div>
+        </div>
+        <div class="update">
+          <div class="what"><span class="ver" style="--c:var(--sky)">v1.10.0</span><span class="proj">JP Subs</span><span class="date">Sep 27, 2026</span></div>
+          <div>
+            <h4>Korean translation</h4>
+            <p>Step 3, and Korean now translates. Its quality has not been checked by a Korean reader, and the popup says so rather than presenting Korean and Japanese as equally trustworthy.</p>
+          </div>
+        </div>
+        <div class="update">
           <div class="what"><span class="ver" style="--c:var(--brand)">v0.1.0</span><span class="proj">Whisper Subtitler</span><span class="date">Sep 26, 2026</span></div>
           <div>
             <h4>Desktop app</h4>
@@ -417,20 +431,6 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
           <div>
             <h4>The Laws, balanced</h4>
             <p>The new Laws are worth building a character around. Their stat effect was ×2.59 at 100%, a footnote beside Soul Transformation's numbers. It is now ×100: ×1.585 per 10%, so the ~20% a player arrives with is already ×2.5, 50% is ×10, 75% ×32.</p>
-          </div>
-        </div>
-        <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--sky)">v1.7.0</span><span class="proj">JP Subs</span><span class="date">Sep 6, 2026</span></div>
-          <div>
-            <h4>Subtitle files</h4>
-            <p>Japanese <code>.srt</code>/<code>.vtt</code> in, English <code>.srt</code> out, in its own tab. This is how the project reaches video that is not on YouTube, and it costs no per-site work: a subtitle file is the same thing the interceptor already extracts — timed cues — so the two-pass pipeline is reused unchanged.</p>
-          </div>
-        </div>
-        <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--sky)">v1.6.0</span><span class="proj">JP Subs</span><span class="date">Sep 4, 2026</span></div>
-          <div>
-            <h4>Quality of life</h4>
-            <p>Hide/show subtitles without discarding the translation. Glossary corrections applied to cached subtitles instantly, with no re-translation. Popup state read from durable storage instead of the worker's in-memory map, which MV3 wipes after ~30 s idle — that was why reopening the popup lost the button state.</p>
           </div>
         </div>
         <!--updates:end-->

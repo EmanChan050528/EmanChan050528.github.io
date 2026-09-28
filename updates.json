@@ -15,16 +15,16 @@
   ],
   "jp-subs": [
     {
-      "version": "1.7.0",
-      "title": "Subtitle files",
-      "summary": "Japanese `.srt`/`.vtt` in, English `.srt` out, in its own tab. This is how the project reaches video that is not on YouTube, and it costs no per-site work: a subtitle file is the same thing the interceptor already extracts — timed cues — so the two-pass pipeline is reused unchanged.",
-      "date": "2026-09-06"
+      "version": "1.11.0",
+      "title": "Ollama health check",
+      "summary": "Ollama is a separate program people close, and the old failure mode was to start a run, extract the whole transcript, and only then hit the model call and die. The popup now probes before anything starts and disables Translate until the backend is actually usable.",
+      "date": "2026-09-27"
     },
     {
-      "version": "1.6.0",
-      "title": "Quality of life",
-      "summary": "Hide/show subtitles without discarding the translation. Glossary corrections applied to cached subtitles instantly, with no re-translation. Popup state read from durable storage instead of the worker's in-memory map, which MV3 wipes after ~30 s idle — that was why reopening the popup lost the button state.",
-      "date": "2026-09-04"
+      "version": "1.10.0",
+      "title": "Korean translation",
+      "summary": "Step 3, and Korean now translates. Its quality has not been checked by a Korean reader, and the popup says so rather than presenting Korean and Japanese as equally trustworthy.",
+      "date": "2026-09-27"
     }
   ],
   "whisper-subs": [
