@@ -2,7 +2,9 @@ name: Update project updates
 
 on:
   schedule:
-    - cron: "17 * * * *"   # hourly, at :17 past the hour
+    - cron: "17 */6 * * *"   # safety net only; real updates arrive via each
+                              # project repo's "notify-homepage" workflow,
+                              # which fires this same job on a new tag push
   workflow_dispatch:        # "Run workflow" button in the Actions tab
 
 permissions:
