@@ -29,15 +29,15 @@
   ],
   "whisper-subs": [
     {
+      "version": "0.1.1",
+      "title": "A new window, line-shift check and streaming audio",
+      "summary": "The window has been rebuilt as a modern app, with file cards that show each stage's progress, switches instead of checkboxes, and a drop target that covers the whole window.",
+      "date": "2026-09-28"
+    },
+    {
       "version": "0.1.0",
       "title": "Desktop app",
       "summary": "A drag-and-drop window for anyone who would rather not use a terminal, and a standalone Windows build that needs no Python installed.",
-      "date": "2026-09-26"
-    },
-    {
-      "version": "0.0.3",
-      "title": "Quality and long files",
-      "summary": "Long recordings are safe to interrupt, and the subtitles are cleaner: missed speech is recovered, invented sign-offs are dropped, and timing is tidier.",
       "date": "2026-09-26"
     }
   ]
