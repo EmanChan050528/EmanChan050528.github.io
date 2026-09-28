@@ -23,6 +23,7 @@
   --sky: #86b9ec;
   --violet: #b9a3f2;
   --crimson: #e8a0ab;
+  --vermilion: #f0916b;
   --on-brand: #06231a;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -41,6 +42,7 @@
     --sky: #1f5f9e;
     --violet: #6a42b5;
     --crimson: #a23347;
+    --vermilion: #b8451f;
     --on-brand: #ffffff;
   }
 }
@@ -56,6 +58,7 @@
   --sky: #1f5f9e;
   --violet: #6a42b5;
   --crimson: #a23347;
+  --vermilion: #b8451f;
   --on-brand: #ffffff;
 }
 
@@ -130,6 +133,7 @@ section { padding: 40px 0; }
 .project.sky { --accent: var(--sky); }
 .project.violet { --accent: var(--violet); }
 .project.crimson { --accent: var(--crimson); }
+.project.vermilion { --accent: var(--vermilion); }
 .project .body { padding: 34px 34px 30px; display: flex; flex-direction: column; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .tag {
@@ -285,7 +289,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
     <section id="projects" aria-labelledby="projects-h">
       <div class="section-head">
         <h2 id="projects-h">Current projects</h2>
-        <span>3 active</span>
+        <span>4 active</span>
       </div>
 
       <!-- Cultivation Idle -->
@@ -392,6 +396,47 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             </picture>
             <figcaption>Drop in a file, press Start. Timings measured on an RTX 5070.</figcaption>
           </figure>
+        </div>
+      </article>
+
+      <!-- Webnovel Translator -->
+      <article class="project vermilion">
+        <div class="body">
+          <div class="tags">
+            <span class="tag status">In development</span>
+            <span class="tag">Chrome extension + CLI</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3>Webnovel Translator</h3>
+          <p class="sub">Chinese web novels, translated in place &mdash; locally.</p>
+          <p>Same posture as JP Subs, aimed at prose instead of subtitles: a local model through <strong>Ollama</strong> translates a chapter where you're already reading it. Nothing is uploaded, and nothing costs per chapter.</p>
+          <p>Site adapters extract a chapter's text on <strong>Qidian</strong> and <strong>Jinjiang's</strong> free chapters; anywhere else, a paste-and-translate tab covers it, and a page scrambled by an anti-copy font is refused rather than mistranslated. A per-novel <strong>glossary</strong> (names, factions, realms, techniques, terms) keeps invented terminology consistent chapter to chapter, and finished chapters are cached locally, so a reread is instant.</p>
+          <div class="facts">
+            <div><b>2</b><small>site adapters, plus paste-in fallback</small></div>
+            <div><b>370&ndash;400</b><small>chapters cached locally</small></div>
+            <div><b>5</b><small>glossary categories</small></div>
+          </div>
+          <div class="links">
+            <span class="note">Private repository, early: the translation core is proven from the command line, but the extension hasn't been loaded into a real browser yet.</span>
+          </div>
+        </div>
+        <div class="visual">
+          <div>
+            <div class="terminal" aria-hidden="true">
+              <div class="term-bar"><span></span><span></span><span></span></div>
+              <pre class="term-body">$ npm test
+
+&gt; node --test src/**/*.test.mjs
+
+<span class="ok">ok</span> 5 - src\glossary.test.mjs
+<span class="ok">ok</span> 5 - src\glossary-text.test.mjs
+
+# tests 5
+# pass 5
+<span class="ok"># fail 0</span></pre>
+            </div>
+            <p class="term-caption">The glossary merge and glossary-editor test suite, run locally.</p>
+          </div>
         </div>
       </article>
     </section>
