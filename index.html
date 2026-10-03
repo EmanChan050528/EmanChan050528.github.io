@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meatylok's Homepage</title>
-<meta name="description" content="Project updates from Meatylok: Cultivation Idle, an idle game about Xianxia cultivation, and JP Subs and Whisper Subtitler, local Japanese-to-English subtitle tools.">
+<meta name="description" content="Meatylok's projects and release notes: Cultivation Idle, JP Subs, Whisper Subtitler and Webnovel Translator.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1413'/%3E%3Cpath d='M7 23V9l9 9 9-9v14' fill='none' stroke='%235fd0a3' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,7 +105,15 @@ nav a:focus-visible, .btn:focus-visible, .link:focus-visible, .theme:focus-visib
   letter-spacing: -.02em; margin: 0 0 22px; max-width: 16ch;
 }
 .hero h1 em { font-style: italic; color: var(--brand); }
-.hero p.lede { font-size: 18px; color: var(--muted); max-width: 56ch; margin: 0 0 30px; }
+.hero p.lede { font-size: 18px; color: var(--muted); max-width: 56ch; margin: 0 0 18px; }
+.now { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.now li { display: flex; flex-wrap: wrap; gap: 2px 14px; align-items: baseline; padding-left: 20px; position: relative; }
+.now li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.now a { font-weight: 600; text-decoration: none; }
+.now a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.now a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+.now span { color: var(--muted); font-size: 15px; }
+.project { scroll-margin-top: 80px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
@@ -278,12 +286,14 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
 
     <div class="hero">
       <p class="eyebrow">Meatylok's homepage</p>
-      <h1>Games and tools, built <em>in the open</em>.</h1>
-      <p class="lede">Bookmark this to keep an eye on my project updates. Right now that's an idle game about climbing the realms of Xianxia cultivation, plus two tools that subtitle Japanese video on your own machine: a browser extension for YouTube and a desktop app for any file.</p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">See the projects</a>
-        <a class="btn" href="https://github.com/EmanChan050528" rel="noopener">GitHub profile</a>
-      </div>
+      <h1>Projects and updates.</h1>
+      <p class="lede">What I'm working on, and what changed in each.</p>
+      <ul class="now">
+        <li style="--c:var(--gold)"><a href="#cultivation-idle">Cultivation Idle</a> <span>An idle game about Xianxia cultivation</span></li>
+        <li style="--c:var(--sky)"><a href="#jp-subs">JP Subs</a> <span>English subtitles for Japanese YouTube, translated locally</span></li>
+        <li style="--c:var(--brand)"><a href="#whisper-subtitler">Whisper Subtitler</a> <span>English subtitles for any Japanese video or audio file</span></li>
+        <li style="--c:var(--vermilion)"><a href="#webnovel-translator">Webnovel Translator</a> <span>Chinese web novels, translated in place</span></li>
+      </ul>
     </div>
 
     <section id="projects" aria-labelledby="projects-h">
@@ -293,7 +303,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       </div>
 
       <!-- Cultivation Idle -->
-      <article class="project gold">
+      <article class="project gold" id="cultivation-idle">
         <div class="body">
           <div class="tags">
             <span class="tag status">In development</span>
@@ -330,7 +340,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       </article>
 
       <!-- JP Subs -->
-      <article class="project sky">
+      <article class="project sky" id="jp-subs">
         <div class="body">
           <div class="tags">
             <span class="tag status">Released</span>
@@ -366,7 +376,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       </article>
 
       <!-- Whisper Subtitler -->
-      <article class="project">
+      <article class="project" id="whisper-subtitler">
         <div class="body">
           <div class="tags">
             <span class="tag status">Early release</span>
@@ -400,7 +410,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       </article>
 
       <!-- Webnovel Translator -->
-      <article class="project vermilion">
+      <article class="project vermilion" id="webnovel-translator">
         <div class="body">
           <div class="tags">
             <span class="tag status">Released</span>
