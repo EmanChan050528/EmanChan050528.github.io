@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.16.2",
+      "title": "Heavenly Thunder from tribulations",
+      "summary": "The Law of Heavenly Thunder is comprehended by enduring lightning, not by offering it. Its Region 11 fragment made it a drop count like the Five Elements'; now it comes from tribulations alone — Surpassing Limits' permanent records, then Tribulation Refinement. The design is in docs/tribulation.md and docs/laws.md.",
+      "date": "2026-10-06"
+    },
+    {
       "version": "0.16.1",
       "title": "Tribulations worth preparing for",
       "summary": "Tribulations were too gentle. Qi Refinement IX was sized so an unstudied player ended on a quarter of their HP, and every later gate against a half-studied one, so a studied player never fell below half and the first gate could be walked through on nothing. Fixes on top of v0.16.0; the design is in docs/tribulation.md.",
       "date": "2026-10-06"
-    },
-    {
-      "version": "0.16.0",
-      "title": "Tribulations you endure",
-      "summary": "A tribulation is struck, not checked. The four realm-ending gates used to compare the stat line with three requirements, which a studied player cleared at 2.4–3.2× and knew the answer to before pressing.",
-      "date": "2026-10-03"
     }
   ],
   "jp-subs": [
