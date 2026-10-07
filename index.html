@@ -24,6 +24,7 @@
   --violet: #b9a3f2;
   --crimson: #e8a0ab;
   --vermilion: #f0916b;
+  --lime: #b5d86b;
   --on-brand: #06231a;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -43,6 +44,7 @@
     --violet: #6a42b5;
     --crimson: #a23347;
     --vermilion: #b8451f;
+    --lime: #5a7d12;
     --on-brand: #ffffff;
   }
 }
@@ -59,6 +61,7 @@
   --violet: #6a42b5;
   --crimson: #a23347;
   --vermilion: #b8451f;
+  --lime: #5a7d12;
   --on-brand: #ffffff;
 }
 
@@ -142,6 +145,7 @@ section { padding: 40px 0; }
 .project.violet { --accent: var(--violet); }
 .project.crimson { --accent: var(--crimson); }
 .project.vermilion { --accent: var(--vermilion); }
+.project.lime { --accent: var(--lime); }
 .project .body { padding: 34px 34px 30px; display: flex; flex-direction: column; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .tag {
@@ -213,6 +217,7 @@ section { padding: 40px 0; }
 .shots figure { margin: 0; width: 100%; max-width: 420px; }
 .shots a { display: block; }
 .shots img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); background: #000; }
+.shots figure.tall { max-width: 340px; }
 .shots figcaption { font-size: 12.5px; color: var(--muted); margin: 6px 2px 0; }
 
 /* terminal (xts-zodiac) */
@@ -523,7 +528,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
     <section id="earlier" aria-labelledby="earlier-h">
       <div class="section-head">
         <h2 id="earlier-h">Earlier work</h2>
-        <span>coursework</span>
+        <span>completed</span>
       </div>
 
       <!-- Solar System -->
@@ -596,6 +601,37 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             </div>
             <p class="term-caption">The full known-answer test suite, run locally.</p>
           </div>
+        </div>
+      </article>
+
+      <!-- MacroUI -->
+      <article class="project lime" id="macroui">
+        <div class="body">
+          <div class="tags">
+            <span class="tag status">Completed</span>
+            <span class="tag">AutoHotkey v2</span>
+            <span class="tag">Windows</span>
+            <span class="tag">v1.1.0</span>
+          </div>
+          <h3>MacroUI</h3>
+          <p class="sub">A dark control panel for toggle-style macros.</p>
+          <p>One AutoHotkey v2 script with three macros: <strong>Hold Click</strong>, <strong>Auto Clicker</strong> and <strong>Hold Keys</strong>. Each starts from a rebindable hotkey or a button, and a Stop all hotkey releases everything at once.</p>
+          <p>The Auto Clicker runs from 0.01 to 1000 clicks per second and spells the rate out in plain words. Hold Keys picks its keys on an on-screen keyboard, mouse buttons included. Hotkeys can be switched off while you type, and the app minimises to the system tray.</p>
+          <div class="facts">
+            <div><b>3</b><small>macros, plus Stop all</small></div>
+            <div><b>0.01&ndash;1000</b><small>clicks per second</small></div>
+            <div><b>1</b><small>script file</small></div>
+          </div>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/EmanChan050528/MacroUI" rel="noopener">View on GitHub</a>
+            <a class="link" href="https://github.com/EmanChan050528/MacroUI#getting-started" rel="noopener">Getting started &rarr;</a>
+          </div>
+        </div>
+        <div class="visual shots">
+          <figure class="tall">
+            <a href="images/macroui.png"><img src="images/macroui.webp" width="482" height="624" loading="lazy" alt="The MacroUI window: Hold Click, Auto Clicker and Hold Keys panels, each with a hotkey box and a Start button, and a Stop all button at the bottom."></a>
+            <figcaption>The three macros and Stop all.</figcaption>
+          </figure>
         </div>
       </article>
     </section>
