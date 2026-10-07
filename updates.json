@@ -54,5 +54,19 @@
       "summary": "Jinjiang (jjwxc.net free chapters). Its paragraphs are loose text between `<br>`s, not elements, which exposed Qidian assumptions in the content script. The adapter contract now hands over text nodes and a content root (§5.2).",
       "date": "2026-09-28"
     }
+  ],
+  "macroui": [
+    {
+      "version": "1.1.0",
+      "title": "Hotkeys on/off",
+      "summary": "A toggle in the window and the tray menu switches all hotkeys off, so the keys reach other apps normally without stopping macros that are already running. The setting is remembered between launches.",
+      "date": "2026-10-08"
+    },
+    {
+      "version": "1.0.0",
+      "title": "First release",
+      "summary": "A dark control panel with Hold Click, Auto Clicker and Hold Keys, plus a Stop all hotkey. Hotkeys are rebindable, including modifier combinations and the mouse side buttons, and the Auto Clicker runs from 0.01 to 1000 clicks per second.",
+      "date": "2026-10-08"
+    }
   ]
 }

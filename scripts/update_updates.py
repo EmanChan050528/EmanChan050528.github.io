@@ -29,6 +29,8 @@ PROJECTS = [
     {"key": "jp-subs", "repo": "EmanChan050528/jp-subs", "name": "JP Subs", "color": "sky"},
     {"key": "whisper-subs", "repo": "EmanChan050528/whisper-subs", "name": "Whisper Subtitler", "color": "brand"},
     {"key": "webnovel", "repo": "EmanChan050528/webnovel-translator", "name": "Webnovel Translator", "color": "vermilion"},
+    # Finished project: its entries live in updates.json and are never refetched.
+    {"key": "macroui", "static": True, "name": "MacroUI", "color": "lime"},
 ]
 
 HEADING = re.compile(r"^##\s+v?(\d+\.\d+\.\d+)\s*[—–-]\s*(.+?)\s*$")
@@ -190,6 +192,8 @@ def splice(text, start, end, replacement):
 def main():
     store = load_store()
     for p in PROJECTS:
+        if p.get("static"):
+            continue
         store[p["key"]] = fetch_project(p, store.get(p["key"], []))
 
     with open(INDEX, encoding="utf-8") as f:   # universal newlines: CRLF checkouts read as LF
@@ -198,7 +202,7 @@ def main():
                  "\n" + render_updates(store) + "\n        ")
     for p in PROJECTS:
         entries = store.get(p["key"], [])
-        if entries:
+        if entries and not p.get("static"):
             new = splice(new, "<!--ver:%s-->" % p["key"], "<!--/ver-->", "v" + entries[0]["version"])
 
     if new != page:
