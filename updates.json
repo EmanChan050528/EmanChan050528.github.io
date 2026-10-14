@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.17.1",
+      "title": "Fixes from play",
+      "summary": "Screen layering. The breakthrough window's Tribulation button drew over Settings and Achievements: Main's screens mixed tree order with scattered `z_index` values, and a scene's inner values stacked across panels.",
+      "date": "2026-10-14"
+    },
+    {
       "version": "0.17.0",
       "title": "The active techniques reworked",
       "summary": "One active per line, levelled by study, ranked by realm, and sized to what it answers. Shield and Heal had outgrown everything: one Foundation Shield outweighed the HP bar and covered a whole tribulation, and a Heal restored over twice max HP. The design is in docs/techniques.md and docs/tribulation.md.",
       "date": "2026-10-14"
-    },
-    {
-      "version": "0.16.2",
-      "title": "Heavenly Thunder from tribulations",
-      "summary": "The Law of Heavenly Thunder is comprehended by enduring lightning, not by offering it. Its Region 11 fragment made it a drop count like the Five Elements'; now it comes from tribulations alone — Surpassing Limits' permanent records, then Tribulation Refinement. The design is in docs/tribulation.md and docs/laws.md.",
-      "date": "2026-10-06"
     }
   ],
   "jp-subs": [
