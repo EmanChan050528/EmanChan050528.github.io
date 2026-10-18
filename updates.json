@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.17.3",
+      "title": "Text and the inventory",
+      "summary": "Refusals are said on screen. Every Abode action that used to fail silently - a pill whose uses are spent, a craft short of materials, a full slot - shows its reason on a dark plate at the bottom of the Abode for three seconds.",
+      "date": "2026-10-18"
+    },
+    {
       "version": "0.17.2",
       "title": "The tribulation follow-ups",
       "summary": "The end of an attempt lands. The result card waits 2s after the last bolt and the Surpass Limits choice 1.5s, with Leave / Stop hidden meanwhile; the breakthrough is still secured at the bolt.",
       "date": "2026-10-16"
-    },
-    {
-      "version": "0.17.1",
-      "title": "Fixes from play",
-      "summary": "Screen layering. The breakthrough window's Tribulation button drew over Settings and Achievements: Main's screens mixed tree order with scattered `z_index` values, and a scene's inner values stacked across panels.",
-      "date": "2026-10-14"
     }
   ],
   "jp-subs": [
