@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.18.4",
+      "title": "Settings, the Samsara chart's text, and renames",
+      "summary": "Settings has four tabs - General, Audio, Display, Data - each one centred column, every row a name and its control, so nothing reaches the window's edge.",
+      "date": "2026-10-25"
+    },
+    {
       "version": "0.18.3",
       "title": "Art: manuals, swords, pills and the World's combat effects",
       "summary": "Technique manuals are a book. Every realm's manual is one thread-bound book with a title slip and a stitched spine; only its cover takes the technique's attribute colour, the details stay untinted, and it fills its slot.",
       "date": "2026-10-25"
-    },
-    {
-      "version": "0.18.2",
-      "title": "Sound effects",
-      "summary": "The game has sound effects, across nearly every system: the UI, cultivation, techniques, the Abode, the World, the tribulation and the prestige screens - about fifty moments in all, listed in docs/sound.md. Every one was chosen by ear, a section at a time.",
-      "date": "2026-10-23"
     }
   ],
   "jp-subs": [
