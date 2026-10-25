@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.18.3",
+      "title": "Art: manuals, swords, pills and the World's combat effects",
+      "summary": "Technique manuals are a book. Every realm's manual is one thread-bound book with a title slip and a stitched spine; only its cover takes the technique's attribute colour, the details stay untinted, and it fills its slot.",
+      "date": "2026-10-25"
+    },
+    {
       "version": "0.18.2",
       "title": "Sound effects",
       "summary": "The game has sound effects, across nearly every system: the UI, cultivation, techniques, the Abode, the World, the tribulation and the prestige screens - about fifty moments in all, listed in docs/sound.md. Every one was chosen by ear, a section at a time.",
       "date": "2026-10-23"
-    },
-    {
-      "version": "0.18.1",
-      "title": "The element characters on the web, achievement popups",
-      "summary": "The five elements' characters draw on the web. The Qi Array's sockets read 木 火 土 金 水, which a web build has no font for; Fusion Pixel Font (SIL OFL), cut down to just those five glyphs - 2KB - is now the UI font's last fallback, so every platform draws them in a pixel face.",
-      "date": "2026-10-19"
     }
   ],
   "jp-subs": [
