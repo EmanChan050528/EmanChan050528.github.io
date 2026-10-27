@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "0.19.0",
+      "title": "Clean numbers",
+      "summary": "Every stage's qi, every enemy's stats and every attribute grant is a clean number - 1, 2 or 5 times a power of ten (100, 200, 500, 1K...). A technique's grants still rise from Minor to Major to Perfection. Stages now come in pairs that share a requirement.",
+      "date": "2026-10-27"
+    },
+    {
       "version": "0.18.5",
       "title": "Enemy actives and passives, ores, and renames",
       "summary": "Elites and Bosses have an active. Every 4 normal attacks their gauge turns red, and the next attack is the active: an Elite's is a 3x hit, floating up in gold.",
       "date": "2026-10-26"
-    },
-    {
-      "version": "0.18.4",
-      "title": "Settings, the Samsara chart's text, and renames",
-      "summary": "Settings has four tabs - General, Audio, Display, Data - each one centred column, every row a name and its control, so nothing reaches the window's edge.",
-      "date": "2026-10-25"
     }
   ],
   "jp-subs": [
