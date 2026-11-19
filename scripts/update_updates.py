@@ -25,7 +25,7 @@ ENTRIES_PER_PROJECT = 2
 MAX_SUMMARY = 340
 
 PROJECTS = [
-    {"key": "cultivation", "repo": "EmanChan050528/cultivation-idle", "name": "Cultivation Idle", "color": "gold"},
+    {"key": "cultivation", "repo": "EmanChan050528/cultivation-idle", "name": "Wu Wei", "color": "gold"},
     {"key": "jp-subs", "repo": "EmanChan050528/jp-subs", "name": "JP Subs", "color": "sky"},
     {"key": "whisper-subs", "repo": "EmanChan050528/whisper-subs", "name": "Whisper Subtitler", "color": "brand"},
     {"key": "webnovel", "repo": "EmanChan050528/webnovel-translator", "name": "Webnovel Translator", "color": "vermilion"},

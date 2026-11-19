@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meatylok's Homepage</title>
-<meta name="description" content="Meatylok's projects and release notes: Cultivation Idle, JP Subs, Whisper Subtitler and Webnovel Translator.">
+<meta name="description" content="Meatylok's projects and release notes: Wu Wei, JP Subs, Whisper Subtitler and Webnovel Translator.">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1413'/%3E%3Cpath d='M7 23V9l9 9 9-9v14' fill='none' stroke='%235fd0a3' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,6 +167,16 @@ section { padding: 40px 0; }
 .link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .note { font-size: 13px; color: var(--muted); }
 
+/* itch.io widget: its colours are fixed in the URL, so there is one per theme */
+.itch { display: block; width: 100%; max-width: 552px; height: 167px; border: 0; border-radius: 10px; }
+.itch.light { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .itch.dark { display: none; }
+  :root:not([data-theme="dark"]) .itch.light { display: block; }
+}
+:root[data-theme="light"] .itch.dark { display: none; }
+:root[data-theme="light"] .itch.light { display: block; }
+
 .visual {
   border-left: 1px solid var(--border);
   background:
@@ -294,7 +304,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       <h1>Projects and updates.</h1>
       <p class="lede">What I'm working on, and what changed in each.</p>
       <ul class="now">
-        <li style="--c:var(--gold)"><a href="#cultivation-idle">Cultivation Idle</a> <span>An idle game about Xianxia cultivation</span></li>
+        <li style="--c:var(--gold)"><a href="#wu-wei">Wu Wei</a> <span>An idle game about Xianxia cultivation</span></li>
         <li style="--c:var(--sky)"><a href="#jp-subs">JP Subs</a> <span>English subtitles for Japanese YouTube, translated locally</span></li>
         <li style="--c:var(--brand)"><a href="#whisper-subtitler">Whisper Subtitler</a> <span>English subtitles for any Japanese video or audio file</span></li>
         <li style="--c:var(--vermilion)"><a href="#webnovel-translator">Webnovel Translator</a> <span>Chinese web novels, translated in place</span></li>
@@ -307,8 +317,8 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
         <span>4 active</span>
       </div>
 
-      <!-- Cultivation Idle -->
-      <article class="project gold" id="cultivation-idle">
+      <!-- Wu Wei -->
+      <article class="project gold" id="wu-wei">
         <div class="body">
           <div class="tags">
             <span class="tag status">In development</span>
@@ -316,7 +326,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <span class="tag">GDScript</span>
             <span class="tag"><!--ver:cultivation-->v1.0.2<!--/ver--></span>
           </div>
-          <h3>Cultivation Idle</h3>
+          <h3>Wu Wei</h3>
           <p class="sub">An idle game about becoming immortal.</p>
           <p>Run timed cultivation sessions to gather qi, break through the stages of five realms, and study techniques for permanent stats. Build an <strong>Abode</strong> for alchemy and artifacts, fight through twelve Regions for materials, then <strong>reincarnate</strong> and spend what you earned on the Samsara tree.</p>
           <p>Every fight, tribulation and breakthrough gate is derived by balance tooling rather than tuned by hand, so a change to the numbers re-derives the obstacles.</p>
@@ -329,7 +339,8 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <div><b>28</b><small>materials</small></div>
           </div>
           <div class="links">
-            <a class="btn primary" href="https://meatylok.itch.io/wu-wei" rel="noopener">Play on itch.io</a>
+            <iframe class="itch dark" title="Wu Wei on itch.io" loading="lazy" src="https://itch.io/embed/5089452?bg_color=1b2421&amp;fg_color=e8ece9&amp;link_color=e0bd72&amp;border_color=27332f"><a href="https://meatylok.itch.io/wu-wei">Wu Wei: Idle Cultivation by Meatylok</a></iframe>
+            <iframe class="itch light" title="Wu Wei on itch.io" loading="lazy" src="https://itch.io/embed/5089452?bg_color=efece3&amp;fg_color=19211e&amp;link_color=8a6212&amp;border_color=dcd7ca"><a href="https://meatylok.itch.io/wu-wei">Wu Wei: Idle Cultivation by Meatylok</a></iframe>
             <span class="note">Private repository. Updates are posted below.</span>
           </div>
         </div>
@@ -467,14 +478,14 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
       <div class="updates">
         <!--updates:start-->
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--gold)">v1.0.2</span><span class="proj">Cultivation Idle</span><span class="date">Nov 19, 2026</span></div>
+          <div class="what"><span class="ver" style="--c:var(--gold)">v1.0.2</span><span class="proj">Wu Wei</span><span class="date">Nov 19, 2026</span></div>
           <div>
             <h4>Skip, and a quieter session</h4>
             <p>From the first players' feedback.</p>
           </div>
         </div>
         <div class="update">
-          <div class="what"><span class="ver" style="--c:var(--gold)">v1.0.1</span><span class="proj">Cultivation Idle</span><span class="date">Nov 18, 2026</span></div>
+          <div class="what"><span class="ver" style="--c:var(--gold)">v1.0.1</span><span class="proj">Wu Wei</span><span class="date">Nov 18, 2026</span></div>
           <div>
             <h4>The end of Qingzhou, rewritten</h4>
             <p>Wording and fixes on 1.0: the Grand Formation and the ending, read and played again.</p>
