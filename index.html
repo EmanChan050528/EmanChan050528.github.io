@@ -167,16 +167,6 @@ section { padding: 40px 0; }
 .link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .note { font-size: 13px; color: var(--muted); }
 
-/* itch.io widget: its colours are fixed in the URL, so there is one per theme */
-.itch { display: block; width: 100%; max-width: 552px; height: 167px; border: 0; border-radius: 10px; }
-.itch.light { display: none; }
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .itch.dark { display: none; }
-  :root:not([data-theme="dark"]) .itch.light { display: block; }
-}
-:root[data-theme="light"] .itch.dark { display: none; }
-:root[data-theme="light"] .itch.light { display: block; }
-
 .visual {
   border-left: 1px solid var(--border);
   background:
@@ -328,8 +318,7 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <div><b>28</b><small>materials</small></div>
           </div>
           <div class="links">
-            <iframe class="itch dark" title="Wu Wei on itch.io" loading="lazy" src="https://itch.io/embed/5089452?bg_color=1b2421&amp;fg_color=e8ece9&amp;link_color=e0bd72&amp;border_color=27332f"><a href="https://meatylok.itch.io/wu-wei">Wu Wei: Idle Cultivation by Meatylok</a></iframe>
-            <iframe class="itch light" title="Wu Wei on itch.io" loading="lazy" src="https://itch.io/embed/5089452?bg_color=efece3&amp;fg_color=19211e&amp;link_color=8a6212&amp;border_color=dcd7ca"><a href="https://meatylok.itch.io/wu-wei">Wu Wei: Idle Cultivation by Meatylok</a></iframe>
+            <a class="btn primary" href="https://meatylok.itch.io/wu-wei" rel="noopener">Play on itch.io</a>
             <span class="note">Private repository. Updates are posted below.</span>
           </div>
         </div>
