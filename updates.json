@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "1.0.4",
+      "title": "A save that cannot be lost, and a clipboard that works",
+      "summary": "A save could be lost: if the game could not read it (after a crash, say), it started a new game, and the first autosave wrote over the old one. No balance changes.",
+      "date": "2026-11-20"
+    },
+    {
       "version": "1.0.3",
       "title": "Pills that end, and the Abode in bulk",
       "summary": "From the first players' feedback. No balance changes: every enemy, tribulation and Law is as in 1.0.2.",
       "date": "2026-11-20"
-    },
-    {
-      "version": "1.0.2",
-      "title": "Skip, and a quieter session",
-      "summary": "From the first players' feedback.",
-      "date": "2026-11-19"
     }
   ],
   "jp-subs": [
