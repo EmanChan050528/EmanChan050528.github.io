@@ -1,15 +1,15 @@
 {
   "cultivation": [
     {
-      "version": "1.1.1",
-      "title": "Pills in their realm, and Repeat shown",
-      "summary": "Fixes on 1.1.0. No balance changes.",
+      "version": "1.1.2",
+      "title": "Gear off at the wheel, and What's New for every save",
+      "summary": "Fixes on 1.1.1. No balance changes.",
       "date": "2026-11-20"
     },
     {
-      "version": "1.1.0",
-      "title": "Fights sized to the player who arrives",
-      "summary": "The refit, from the first players' feedback: they reached Regions 5-9 and the Foundation and Golden Core tribulations far stronger than the game expected - pills, Cores, gear, achievements and Samsara were never in the player model - so those fights asked almost nothing.",
+      "version": "1.1.1",
+      "title": "Pills in their realm, and Repeat shown",
+      "summary": "Fixes on 1.1.0. No balance changes.",
       "date": "2026-11-20"
     }
   ],
