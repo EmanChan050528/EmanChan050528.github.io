@@ -185,17 +185,6 @@ section { padding: 40px 0; }
   display: flex; align-items: center; justify-content: center; padding: 30px;
 }
 
-/* realm ladder (cultivation) */
-.ladder { width: 100%; max-width: 340px; }
-.ladder .cap { font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
-.rung { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-.rung .bar { height: 34px; border-radius: 8px; background: color-mix(in srgb, var(--gold) 22%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent); display: flex; align-items: center; padding: 0 12px; white-space: nowrap; font-size: 13.5px; font-weight: 500; }
-.rung:nth-child(2) .bar { width: 52%; }
-.rung:nth-child(3) .bar { width: 64%; }
-.rung:nth-child(4) .bar { width: 76%; }
-.rung:nth-child(5) .bar { width: 88%; }
-.rung:nth-child(6) .bar { width: 100%; background: color-mix(in srgb, var(--gold) 38%, transparent); }
-
 /* player mock (jp-subs) */
 .player { width: 100%; max-width: 400px; }
 .screen {
@@ -344,15 +333,10 @@ footer a:hover { color: var(--text); text-decoration: underline; text-underline-
             <span class="note">Private repository. Updates are posted below.</span>
           </div>
         </div>
-        <div class="visual" aria-hidden="true">
-          <div class="ladder">
-            <p class="cap">The five realms</p>
-            <div class="rung"><div class="bar">Qi Refinement</div></div>
-            <div class="rung"><div class="bar">Foundation</div></div>
-            <div class="rung"><div class="bar">Golden Core</div></div>
-            <div class="rung"><div class="bar">Nascent Soul</div></div>
-            <div class="rung"><div class="bar">Soul Transformation</div></div>
-          </div>
+        <div class="visual shots">
+          <figure>
+            <a href="https://meatylok.itch.io/wu-wei"><img src="images/wu-wei-cover.png" width="630" height="500" loading="lazy" alt="Wu Wei cover art: a heron stands in a marsh at sunset beneath a red seal reading 無為, with the title Wu Wei, Idle Cultivation."></a>
+          </figure>
         </div>
       </article>
 
