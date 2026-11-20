@@ -1,15 +1,15 @@
 {
   "cultivation": [
     {
-      "version": "1.1.2",
-      "title": "Gear off at the wheel, and What's New for every save",
-      "summary": "Fixes on 1.1.1. No balance changes.",
+      "version": "1.1.3",
+      "title": "Look back",
+      "summary": "The end of Part 1 no longer freezes the game. No balance changes.",
       "date": "2026-11-20"
     },
     {
-      "version": "1.1.1",
-      "title": "Pills in their realm, and Repeat shown",
-      "summary": "Fixes on 1.1.0. No balance changes.",
+      "version": "1.1.2",
+      "title": "Gear off at the wheel, and What's New for every save",
+      "summary": "Fixes on 1.1.1. No balance changes.",
       "date": "2026-11-20"
     }
   ],
