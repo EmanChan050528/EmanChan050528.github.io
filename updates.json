@@ -1,16 +1,16 @@
 {
   "cultivation": [
     {
+      "version": "1.0.3",
+      "title": "Pills that end, and the Abode in bulk",
+      "summary": "From the first players' feedback. No balance changes: every enemy, tribulation and Law is as in 1.0.2.",
+      "date": "2026-11-20"
+    },
+    {
       "version": "1.0.2",
       "title": "Skip, and a quieter session",
       "summary": "From the first players' feedback.",
       "date": "2026-11-19"
-    },
-    {
-      "version": "1.0.1",
-      "title": "The end of Qingzhou, rewritten",
-      "summary": "Wording and fixes on 1.0: the Grand Formation and the ending, read and played again.",
-      "date": "2026-11-18"
     }
   ],
   "jp-subs": [
